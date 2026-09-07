@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="AURELIA Coffee & Patisserie - A luxurious destination for handcrafted coffee, pastries and unforgettable moments.">
+
+    <title>AURELIA | Coffee & Patisserie</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                AURELIA
+                <span>COFFEE & PATISSERIE</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Open navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <a href="#reservation" class="nav-button">
+                Reserve a Table
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+
+
+        <!-- RESERVATION -->
+
+        <section class="reservation section" id="reservation">
+
+            <div class="container reservation-grid">
+
+                <div class="reservation-content reveal">
+
+                    <p class="eyebrow">MAKE IT SPECIAL</p>
+
+                    <h2>
+                        Your table
+                        <span>awaits.</span>
+                    </h2>
+
+                    <p>
+                        Planning a date, meeting or simply looking for
+                        a beautiful evening? Reserve your favourite table
+                        at Aurelia.
+                    </p>
+
+                </div>
+
+
+                <form class="reservation-form reveal" id="reservationForm">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name"
+                                placeholder="Enter your name" required>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="guests">Guests</label>
+
+                            <select id="guests" name="guests" required>
+                                <option value="">Select</option>
+                                <option>1 Guest</option>
+                                <option>2 Guests</option>
+                                <option>3 Guests</option>
+                                <option>4 Guests</option>
+                                <option>5+ Guests</option>
+                            </select>
+                        </div><br>
+
+                    </div>
+
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div><br>
+
+                        <div class="form-group">
+                            <label for="time">Time</label>
+
+                            <select id="time" name="time" required>
+                                <option value="">Select</option>
+                                <option>10:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>2:00 PM</option>
+                                <option>4:00 PM</option>
+                                <option>6:00 PM</option>
+                                <option>8:00 PM</option>
+                            </select>
+                        </div><br>
+
+                    </div>
+
+
+                    <button type="submit" class="primary-button form-button">
+                        Reserve My Table
+                    </button>
+
+                    <p class="form-message" id="formMessage"></p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+      
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <a href="#home" class="logo">
+                    AURELIA
+                    <span>COFFEE & PATISSERIE</span>
+                </a>
+
+                <p>
+                    Crafted for slow moments.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Explore</h4>
+
+                <a href="#about">Our Story</a>
+                <a href="#menu">Menu</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#reviews">Reviews</a>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <h4>Visit</h4>
+
+                <a href="#contact">Contact</a>
+                <a href="#reservation">Reservations</a>
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom container">
+
+            <p>
+                © 2026 AURELIA Coffee & Patisserie. All rights reserved.
+            </p>
+
+            <p>
+                Made with ☕ & love.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
